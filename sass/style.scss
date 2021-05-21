@@ -1,0 +1,79 @@
+//VARIABLES
+$green: #3CBC48;
+$black: #292A2A;
+$white: #ffffff;
+
+/*
+font-family: 'Roboto', sans-serif;
+font-weight: 400; -> Regular
+
+font-family: 'Roboto', sans-serif;
+font-weight: 700; -> Bold
+
+font-family: 'Roboto', sans-serif;
+font-weight: 900; -> Black
+*/
+
+.container-fluid{
+    padding: 0;
+}
+
+.row{
+    width: 100%;
+}
+
+.logo{
+    display: block;
+    margin: 0 0 0 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    text-decoration: none; 
+    color: $white;
+}
+
+.logo:hover{
+    color: $white;
+}
+
+.top-bar{
+    position: fixed;
+    width: 100%;
+    padding: 1.05em;
+    background: $green;
+}
+
+.top-nav{
+    padding: 0;
+    margin: .5em;
+    float: right;
+}
+
+.top-item{
+    display: inline;
+    padding: 0;
+    margin: 0 3em 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: $white;
+}
+
+.top-link{
+    padding: 0.5em 2em;
+    margin: 0;
+    text-decoration: none;
+    font-size: 1em;
+    color: $white;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.top-link:hover{
+    color: $white;
+    border: 2px solid $white;
+}
+
+.img-background{
+    padding: 22em;
+    background: url(../img/header.png);
+}

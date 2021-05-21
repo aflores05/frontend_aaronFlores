@@ -71,3 +71,22 @@ font-weight: 900; -> Black
   padding: 22em;
   background: url(../img/header.png);
 }
+
+.input {
+  width: 32%;
+  padding: 0.6em 0.5em;
+  margin: 0 0 0 18em;
+  background: white;
+  color: #292A2A;
+  border: 2px solid #ffffff;
+  border-radius: 0.8em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.submit-button {
+  padding: 0.6em 2em 0.7em;
+  margin: 0 0 0 0.3em;
+  border: 2px solid #ffffff;
+  border-radius: 0.8em;
+}

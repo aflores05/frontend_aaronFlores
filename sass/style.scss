@@ -14,6 +14,14 @@ font-family: 'Roboto', sans-serif;
 font-weight: 900; -> Black
 */
 
+h1{
+    padding: 0;
+    margin: 1em 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
 .container-fluid{
     padding: 0;
 }
@@ -39,8 +47,8 @@ font-weight: 900; -> Black
 .top-bar{
     position: fixed;
     width: 100%;
-    padding: 1.05em;
-    background: $green;
+    padding: 1.63em;
+    background: $green
 }
 
 .top-nav{
@@ -74,14 +82,14 @@ font-weight: 900; -> Black
 }
 
 .img-background{
-    padding: 22em;
-    background: url(../img/header.png);
+    padding: 27.5em;
+    background: url(../img/header01.png);
 }
 
 .input{
     width: 32%;
     padding: 0.6em .5em;
-    margin: 0 0 0 18em;
+    margin: 0 0 0 20em;
     background: white;
     color: $black;
     border: 2px solid $white;
@@ -95,4 +103,31 @@ font-weight: 900; -> Black
     margin: 0 0 0 0.3em;
     border: 2px solid $white;
     border-radius: 0.8em;
+}
+
+.combo-box-1 {
+    width: 26%;
+    margin: 0 0 0 30em;
+    color: #292A2A;
+    border: 2px solid #292A2A;
+    border-radius: 0.4em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.combo-box-2{
+    width:26%;
+    margin: 0;
+    color: $black;
+    border: 2px solid $black;
+    border-radius: .4em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.eventos-section{
+    padding: 0;
+    margin: 3em 0;
 }

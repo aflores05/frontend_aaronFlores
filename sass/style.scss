@@ -16,10 +16,29 @@ font-weight: 900; -> Black
 
 h1{
     padding: 0;
-    margin: 1em 0;
+    margin: 1.5em 0;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+}
+
+h3{
+    margin: 1em 0 1em 4em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h4{
+    margin: .1em 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: $white;
+}
+
+footer{
+    width: 100%;
+    padding: 1em;
+    background: $green;
 }
 
 .container-fluid{
@@ -47,7 +66,7 @@ h1{
 .top-bar{
     position: fixed;
     width: 100%;
-    padding: 1.63em;
+    padding: 1em;
     background: $green
 }
 
@@ -82,14 +101,15 @@ h1{
 }
 
 .img-background{
-    padding: 27.5em;
+    padding: 19em;
+    margin: 0 0 0 -1em;
     background: url(../img/header01.png);
 }
 
 .input{
     width: 32%;
     padding: 0.6em .5em;
-    margin: 0 0 0 20em;
+    margin: 0 0 0 18em;
     background: white;
     color: $black;
     border: 2px solid $white;
@@ -105,19 +125,12 @@ h1{
     border-radius: 0.8em;
 }
 
-.combo-box-1 {
-    width: 26%;
-    margin: 0 0 0 30em;
-    color: #292A2A;
-    border: 2px solid #292A2A;
-    border-radius: 0.4em;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 1.5em;
+.combo-container{
+    margin:0 32em;
 }
 
-.combo-box-2{
-    width:26%;
+.combo-box{
+    width: 100%;
     margin: 0;
     color: $black;
     border: 2px solid $black;
@@ -131,3 +144,19 @@ h1{
     padding: 0;
     margin: 3em 0;
 }
+
+.img-container{
+    margin: 4em 8em 0 13em;
+}
+
+.reservar-button{
+    padding: 0.6em 2em 0.7em;
+    margin: 0 0 3em 4.5em;
+    background: $green;
+    border: 2px solid $green;
+}
+
+
+
+
+

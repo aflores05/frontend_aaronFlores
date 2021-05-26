@@ -17,18 +17,16 @@ font-family: 'Roboto', sans-serif;
 font-weight: 900; -> Black
 */
 
-h1 {
+  h1{
     padding: 0;
     margin: 1.3em 0;
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-  }
   @media only screen and (max-width: 480px) {
-    h1 {
       width: 100%;
       margin: 1em 0;
-    }
+    }                                   
   }
   
   h5 {
@@ -50,9 +48,8 @@ h1 {
     width: 100%;
     padding: 1em;
     background: #3CBC48;
-  }
+
   @media only screen and (max-width: 480px) {
-    footer {
       padding: 0.5em 0;
       background: #3CBC48;
     }
@@ -104,9 +101,8 @@ h1 {
     font-weight: 700;
     font-size: 1em;
     color: #ffffff;
-  }
+
   @media only screen and (max-width: 480px) {
-    .top-item {
       margin: 0 13em 0 0;
     }
   }
@@ -126,57 +122,56 @@ h1 {
   }
   
   .img-background {
-    padding: 19em;
+    padding: 19em 0 19em 0;
     margin: 0;
     background-image: url(../img/header01.png);
     background-position: center;
     background-size: cover;
-  }
+    text-align: center;
+
   @media only screen and (max-width: 480px) {
-    .img-background {
-      padding: 11em;
-      margin: 0 0 0 -1em;
+      padding: 9em 0 9em 0;
+      text-align: center;
     }
   }
   
   .input {
-    width: 62%;
-    padding: 0.7em 5.3em 0.7em 0.5em;
-    margin: 0 0 0 22em;
+    width: 29%;
+    padding: 0.6em 0;
+    margin: 0;
     background: white;
     color: #292A2A;
     border: 2px solid #ffffff;
     border-radius: 0.8em;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-  }
-  @media only screen and (max-width: 480px) {
-    .input {
-      margin: 0 -7em;
-      padding: 0.1em 6.5em;
+
+    @media only screen and (max-width: 480px) {
+      width: 60%;
+      margin: 0;
+      padding: 0.2em;
+      text-align: center;
     }
-  }
+  }    
   
   .submit-button {
-    padding: 0.4em 2em 0.7em;
-    margin: 0.1em 0 0 3.9em;
+    padding: 0.6em 2em;
+    margin: 0;
     border: 2px solid #ffffff;
-    border-radius: 0.8em;
-  }
+    border-radius: 0.7em;
+
   @media only screen and (max-width: 480px) {
-    .submit-button {
-      position: absolute;
-      top: 10.9em;
-      left: 10em;
-      padding: 0.1em 1em;
+      padding: 0.2em 1em;
+      margin: 0;
     }
   }
   
   .combo-container {
-    margin: 0em;
-  }
+      width: 40%;
+      margin: 0 0 0 29em;
+      
+
   @media only screen and (max-width: 480px) {
-    .combo-container {
     width: 100%;
     text-align: center;
     margin: 1em 0 1.5em;
@@ -187,14 +182,13 @@ h1 {
     width: 100%;
     margin: 0;
     color: #292A2A;
-    border: 2px solid #292A2A;
+    border: 1px solid #292A2A;
     border-radius: 0.4em;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 1.2em;
-  }
+  
   @media only screen and (max-width: 480px) {
-    .combo-box {
       width: 50%;
       margin: 0 0 0.5em;
     }
@@ -207,10 +201,9 @@ h1 {
   }
   
   .img-container {
-    margin: 4em 8em 0 13em;
-  }
+    margin: 4em 8em;
+  
   @media only screen and (max-width: 480px) {
-    .img-container {
       margin: 0;
       -webkit-box-align: center;
       -ms-flex-align: center;
@@ -242,6 +235,11 @@ h1 {
     padding: 0;
     margin: 0 0.3em 0 0.5em;
     width: 6%;
+
+    @media only screen and (max-width: 480px) {
+      margin: 0 0.3em 0 0;
+      width: 16%;
+    }
   }
   
   .phone-paragraph {
@@ -256,7 +254,7 @@ h1 {
   
   .social-ul {
     padding: 0;
-    margin: 0.4em 0 0 0;
+    margin: 0.3em 0 0 0;
     text-align: center;
   }
   
@@ -289,12 +287,13 @@ h1 {
     color: #ffffff;
   }
   
-  @media only screen and (max-width: 480px) {
-    .img {
-      height: 138px;
-      margin: auto;
+  .img{
+    @media only screen and (max-width: 480px) {
+    height: 138px;
+    margin: auto;
     }
   }
+  
 
 
 

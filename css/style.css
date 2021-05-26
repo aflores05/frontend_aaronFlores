@@ -158,6 +158,21 @@ footer {
     padding: 0.2em;
   }
 }
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .input {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .input {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 979px) and (max-width: 1024px) {
+  .input {
+    width: 40%;
+  }
+}
 
 .submit-button {
   padding: 0.6em 2em;
@@ -182,16 +197,23 @@ footer {
     margin: 1em 0 1.5em;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
   .combo-container {
     padding: 0;
-    margin: 0 14.4em;
+    margin: 0 10.1em;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .combo-container {
     padding: 0;
     margin: 0 14.4em;
+  }
+}
+@media only screen and (min-width: 979px) and (max-width: 1024px) {
+  .combo-container {
+    width: 50%;
+    padding: 0;
+    margin: 0 15em;
   }
 }
 
@@ -211,6 +233,12 @@ footer {
     margin: 0 0 0.5em;
   }
 }
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .combo-box {
+    width: 100%;
+    margin: 0 0 0.5em;
+  }
+}
 
 .eventos-section {
   padding: 0;
@@ -227,6 +255,11 @@ footer {
     background-position: center;
   }
 }
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .img-container {
+    margin: 2em 0 0 0;
+  }
+}
 
 .reservar-button {
   padding: 0.6em 2em 0.7em;
@@ -234,6 +267,11 @@ footer {
   background: #3CBC48;
   border: 2px solid #3CBC48;
   text-align: center;
+}
+@media only screen and (min-width: 979px) and (max-width: 1024px) {
+  .reservar-button {
+    margin: 0 0 3em;
+  }
 }
 
 .footer-logo {
@@ -271,7 +309,7 @@ footer {
 
 .social-ul {
   padding: 0;
-  margin: 0.3em 0 0 0;
+  margin: 0.3em 0 0 1em;
   text-align: center;
 }
 
@@ -284,20 +322,10 @@ footer {
   color: #ffffff;
 }
 
-.instagram {
-  display: inline;
-  padding: 0.2em 0.4em;
-  margin: 0 0.1em;
-  font-size: 1.1em;
-  text-decoration: none;
-  border: 2px solid #ffffff;
-  color: #ffffff;
-}
-
 .facebook {
   display: inline;
   padding: 0.2em 0.6em;
-  margin: 0 0.4em;
+  margin: 0;
   font-size: 1.1em;
   text-decoration: none;
   border: 2px solid #ffffff;
@@ -310,10 +338,24 @@ footer {
     margin: 0;
   }
 }
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .img {
+    padding: 0;
+    margin: 0;
+    height: 170px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .img {
     padding: 0;
     margin: 0;
     height: 113px;
+  }
+}
+@media only screen and (min-width: 979px) and (max-width: 1024px) {
+  .img {
+    padding: 0;
+    margin: 0;
+    height: 180px;
   }
 }

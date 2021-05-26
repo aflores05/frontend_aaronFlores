@@ -109,7 +109,7 @@ footer {
   text-decoration: none;
   font-size: 1em;
   color: #ffffff;
-  border: 2px solid rgba(0, 0, 0, 0);
+  border: 2px solid #292A2A;
 }
 
 .top-link:hover {
@@ -131,12 +131,20 @@ footer {
     text-align: center;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .img-background {
+    padding: 15em 0 15em 0;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+  }
+}
 
 .input {
   width: 29%;
   padding: 0.6em 0;
   margin: 0;
-  background: white;
+  background: #ffffff;
   color: #292A2A;
   border: 2px solid #ffffff;
   border-radius: 0.8em;
@@ -148,7 +156,6 @@ footer {
     width: 60%;
     margin: 0;
     padding: 0.2em;
-    text-align: center;
   }
 }
 
@@ -172,8 +179,19 @@ footer {
 @media only screen and (max-width: 480px) {
   .combo-container {
     width: 100%;
-    text-align: center;
     margin: 1em 0 1.5em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .combo-container {
+    padding: 0;
+    margin: 0 14.4em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .combo-container {
+    padding: 0;
+    margin: 0 14.4em;
   }
 }
 
@@ -196,7 +214,7 @@ footer {
 
 .eventos-section {
   padding: 0;
-  margin: auto;
+  margin: 0;
   text-align: center;
 }
 
@@ -206,10 +224,7 @@ footer {
 @media only screen and (max-width: 480px) {
   .img-container {
     margin: 0;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     background-position: center;
-    text-align: center;
   }
 }
 
@@ -292,6 +307,13 @@ footer {
 @media only screen and (max-width: 480px) {
   .img {
     height: 138px;
-    margin: auto;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .img {
+    padding: 0;
+    margin: 0;
+    height: 113px;
   }
 }

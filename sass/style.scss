@@ -1,5 +1,6 @@
 @import 'media-queries';
 
+
 //VARIABLES
 $green: #3CBC48;
 $black: #292A2A;
@@ -23,10 +24,12 @@ font-weight: 900; -> Black
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-  @media only screen and (max-width: 480px) {
+
+    @include respond-to($phone){
       width: 100%;
-      margin: 1em 0;
-    }                                   
+      margin: 1em 0; 
+    }  
+         
   }
   
   h5 {
@@ -40,18 +43,18 @@ font-weight: 900; -> Black
     margin: 0;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    color: #ffffff;
+    color: $white;
     text-align: center;
   }
   
   footer {
     width: 100%;
     padding: 1em;
-    background: #3CBC48;
+    background: $green;
 
-  @media only screen and (max-width: 480px) {
+    @include respond-to($phone) {
       padding: 0.5em 0;
-      background: #3CBC48;
+      background: $green;
     }
   }
   
@@ -73,18 +76,18 @@ font-weight: 900; -> Black
     font-size: 1.5em;
     text-decoration: none;
     text-align: center;
-    color: #ffffff;
+    color: $white;
   }
   
   .logo:hover {
-    color: #ffffff;
+    color: $white;
   }
   
   .top-bar {
     position: fixed;
     width: 100%;
     padding: 1em;
-    background: #3CBC48;
+    background: $green;
   }
   
   .top-nav {
@@ -100,9 +103,9 @@ font-weight: 900; -> Black
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 1em;
-    color: #ffffff;
+    color: $white;
 
-  @media only screen and (max-width: 480px) {
+    @include respond-to($phone) {
       margin: 0 13em 0 0;
     }
   }
@@ -112,13 +115,13 @@ font-weight: 900; -> Black
     margin: 0;
     text-decoration: none;
     font-size: 1em;
-    color: #ffffff;
-    border: 2px solid rgba(0, 0, 0, 0);
+    color: $white;
+    border: 2px solid $black;
   }
   
   .top-link:hover {
-    color: #ffffff;
-    border: 2px solid #ffffff;
+    color: $white;
+    border: 2px solid $white;
   }
   
   .img-background {
@@ -129,9 +132,16 @@ font-weight: 900; -> Black
     background-size: cover;
     text-align: center;
 
-  @media only screen and (max-width: 480px) {
+    @include respond-to($phone) {
       padding: 9em 0 9em 0;
       text-align: center;
+    }
+
+    @include respond-to($tablet-landscape) {
+      padding: 15em 0 15em 0;
+      margin: 0;
+      background-position: center;
+      background-size: cover;
     }
   }
   
@@ -139,56 +149,63 @@ font-weight: 900; -> Black
     width: 29%;
     padding: 0.6em 0;
     margin: 0;
-    background: white;
+    background: $white;
     color: #292A2A;
-    border: 2px solid #ffffff;
+    border: 2px solid $white;
     border-radius: 0.8em;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 
-    @media only screen and (max-width: 480px) {
+    @include respond-to($phone) {
       width: 60%;
       margin: 0;
       padding: 0.2em;
-      text-align: center;
     }
   }    
   
   .submit-button {
     padding: 0.6em 2em;
     margin: 0;
-    border: 2px solid #ffffff;
+    border: 2px solid $white;
     border-radius: 0.7em;
 
-  @media only screen and (max-width: 480px) {
+    @include respond-to($phone) {
       padding: 0.2em 1em;
       margin: 0;
     }
   }
   
   .combo-container {
-      width: 40%;
-      margin: 0 0 0 29em;
-      
+    width: 40%;
+    margin: 0 0 0 29em;
 
-  @media only screen and (max-width: 480px) {
-    width: 100%;
-    text-align: center;
-    margin: 1em 0 1.5em;
+    @include respond-to($phone) {
+      width: 100%;
+      margin: 1em 0 1.5em;
+    }
+
+    @include respond-to($tablet-portrait) {
+      padding: 0;
+      margin: 0 14.4em;
+    }
+
+    @include respond-to($tablet-landscape) {
+      padding: 0;
+      margin: 0 14.4em;
     }
   }
   
   .combo-box {
     width: 100%;
     margin: 0;
-    color: #292A2A;
-    border: 1px solid #292A2A;
+    color: $black;
+    border: 1px solid $black;
     border-radius: 0.4em;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 1.2em;
   
-  @media only screen and (max-width: 480px) {
+    @include respond-to($phone) {
       width: 50%;
       margin: 0 0 0.5em;
     }
@@ -196,27 +213,24 @@ font-weight: 900; -> Black
   
   .eventos-section {
     padding: 0;
-    margin: auto;
+    margin: 0;
     text-align: center;
   }
   
   .img-container {
     margin: 4em 8em;
   
-  @media only screen and (max-width: 480px) {
+    @include respond-to($phone) {
       margin: 0;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       background-position: center;
-      text-align: center;
     }
   }
   
   .reservar-button {
     padding: 0.6em 2em 0.7em;
     margin: 0 0 2em;
-    background: #3CBC48;
-    border: 2px solid #3CBC48;
+    background: $green;
+    border: 2px solid  $green;
     text-align: center;
   }
   
@@ -228,7 +242,7 @@ font-weight: 900; -> Black
     font-size: 1em;
     text-decoration: none;
     text-align: center;
-    color: #ffffff;
+    color: $white;
   }
   
   .placephone-icon {
@@ -236,7 +250,7 @@ font-weight: 900; -> Black
     margin: 0 0.3em 0 0.5em;
     width: 6%;
 
-    @media only screen and (max-width: 480px) {
+    @include respond-to($phone) {
       margin: 0 0.3em 0 0;
       width: 16%;
     }
@@ -249,7 +263,7 @@ font-weight: 900; -> Black
     font-weight: 400;
     font-size: 0.9em;
     text-align: center;
-    color: #ffffff;
+    color: $white;
   }
   
   .social-ul {
@@ -260,11 +274,11 @@ font-weight: 900; -> Black
   
   .social-link {
     text-decoration: none;
-    color: #ffffff;
+    color: $white;
   }
   
   .social-link:hover {
-    color: #ffffff;
+    color: $white;
   }
   
   .instagram {
@@ -273,8 +287,8 @@ font-weight: 900; -> Black
     margin: 0 0.1em;
     font-size: 1.1em;
     text-decoration: none;
-    border: 2px solid #ffffff;
-    color: #ffffff;
+    border: 2px solid $white;
+    color: $white;
   }
   
   .facebook {
@@ -283,14 +297,20 @@ font-weight: 900; -> Black
     margin: 0 0.4em;
     font-size: 1.1em;
     text-decoration: none;
-    border: 2px solid #ffffff;
-    color: #ffffff;
+    border: 2px solid $white;
+    color: $white;
   }
   
   .img{
-    @media only screen and (max-width: 480px) {
-    height: 138px;
-    margin: auto;
+    @include respond-to($phone) {
+      height: 138px;
+      margin: 0;
+    }
+
+    @include respond-to($tablet-landscape) {
+      padding: 0;
+      margin: 0;
+      height: 113px;
     }
   }
   

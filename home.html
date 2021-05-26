@@ -13,34 +13,37 @@
 </head>
 
 <body>
-    <div class="container-fluid"></div>
+    <div class="container-fluid">
 
         <header>
             <nav class="top-bar">
                 <div class="row">
                     <div class="col"><a class="logo" href="#">TuTicket</a></div>
-                    <div class="col">
-                        <ul class="top-nav">
-                            <li class="top-item"><a class="top-link" href="#">INICIO</a></li>
-                        </ul>
-                    </div>
                 </div>
             </nav>       
         
             <section class="img-background">
-                <input type="text" placeholder="" class="input">
-                <button class="submit-button" type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" placeholder="" class="input">
+                    </div>
+                    <div class="col">
+                        <button class="submit-button" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                
             </section>
         </header>
 
 
         <section class="eventos-section">
+
             <h1>Eventos próximos</h1>
             <div class="combo-container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <select class="combo-box">
                             <option disabled selected value="">Categoría</option>
                             <option value="">Todas</option>
@@ -50,7 +53,7 @@
                             <option value="">Festival</option>
                         </select>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <select class="combo-box">
                             <option disabled selected value="">Sitio</option>
                             <option value="">Todos</option>
@@ -65,52 +68,53 @@
                     </div>
                 </div>
             </div>
-
             <div class="img-container">
+
+
                 <div class="row">
-                    <div class="col-4">
-                        <img src="./img/imagen01.png" alt="">
-                        <h3>Nombre</h3>
+                    <div class="col-sm-4">
+                        <img src="./img/imagen01.png" class="img" alt="">
+                        <h5>Nombre</h5>
                         <button class="reservar-button" type="submit">
-                            <h4>RESERVAR</h4>
+                            <h6>RESERVAR</h6>
                         </button>
                     </div>
-                    <div class="col-4">
-                        <img src="./img/imagen02.png" alt="">
-                        <h3>Nombre</h3>
+                    <div class="col-sm-4">
+                        <img src="./img/imagen02.png" class="img" alt="">
+                        <h5>Nombre</h5>
                         <button class="reservar-button" type="submit">
-                            <h4>RESERVAR</h4>
+                            <h6>RESERVAR</h6>
                         </button>
                     </div>
-                    <div class="col">
-                        <img src="./img/imagen03.png" alt="">
-                        <h3>Nombre</h3>
+                    <div class="col-sm-4">
+                        <img src="./img/imagen03.png" class="img" alt="">
+                        <h5>Nombre</h5>
                         <button class="reservar-button" type="submit">
-                            <h4>RESERVAR</h4>
+                            <h6>RESERVAR</h6>
                         </button>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-4">
-                        <img src="./img/imagen04.png" alt="">
-                        <h3>Nombre</h3>
+                    <div class="col-sm-4">
+                        <img src="./img/imagen04.png" class="img" alt="">
+                        <h5>Nombre</h5>
                         <button class="reservar-button" type="submit">
-                            <h4>RESERVAR</h4>
+                            <h6>RESERVAR</h6>
                         </button>
                     </div>
-                    <div class="col-4">
-                        <img src="./img/imagen05.png" alt="">
-                        <h3>Nombre</h3>
+                    <div class="col-sm-4">
+                        <img src="./img/imagen05.png" class="img" alt="">
+                        <h5>Nombre</h5>
                         <button class="reservar-button" type="submit">
-                            <h4>RESERVAR</h4>
+                            <h6>RESERVAR</h6>
                         </button>
                     </div>
-                    <div class="col-4">
-                        <img src="./img/imagen06.png" alt="">
-                        <h3>Nombre</h3>
+                    <div class="col-sm-4">
+                        <img src="./img/imagen06.png" class="img" alt="">
+                        <h5>Nombre</h5>
                         <button class="reservar-button" type="submit">
-                            <h4>RESERVAR</h4>
+                            <h6>RESERVAR</h6>
                         </button>
                     </div>
                 </div>
@@ -120,9 +124,23 @@
         <footer>
 
             <div class="row">
-               
+                <div class="col">
+                    <p class="footer-logo" href="#">TuTicket</p>
+                </div>
+                <div class="col">
+                    <p class="phone-paragraph"><span><img src="./img/phone.svg" class="placephone-icon" alt=""></span>26369999</p>
+                </div>
+                <div class="col">
+                    <nav>
+                        <ul class="social-ul">
+                            <li class="instagram"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                            <li class="facebook"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
 
         </footer>
+    </div>
 </body>
 </html>

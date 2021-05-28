@@ -371,6 +371,147 @@ $white: #ffffff;
       height: 180px;
     } 
   }
+
+  .detalle-tittle{
+    margin: 0 0 .5em;
+    color: $white;
+    text-align: left;
+
+    @include respond-to($phone) {
+        margin: 1em 0 .5em;
+        text-align: center;
+    }
+
+    @include respond-to($tablet-portrait) {
+      padding: 0.6em 2em 0.7em;
+      margin: 1em 0 0;
+      text-align: center;
+    } 
+  }
+
+  .detalle-background {
+    padding: 9em 0 5em;
+    margin: 0;
+    background: $black;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+    @include respond-to($phone) {
+      padding: 7em 0 3em;
+      text-align: center;
+    }
+
+    @include respond-to($tablet-landscape) {
+      margin: 0;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  .event-img{
+    height: 375px;
+
+    @include respond-to($phone) {
+        height: 200px;
+    }
+
+    @include respond-to($tablet-landscape) {
+        height: 300px;
+      }
+  }
+
+  .subtittle{
+    margin: 1em 0 0;
+    color: $white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-align: left;
+    font-size: 1rem;
+    
+    @include respond-to($phone) {
+        text-align: center;
+    }
+
+    @include respond-to($tablet-portrait) {
+      text-align: center;
+    } 
+  }
+
+  .subtittle-paragraph{
+    margin: 0;
+    color: $white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 1rem;
+
+    @include respond-to($phone) {
+        text-align: center;
+    }
+  }
+
+  .reservar-submit {
+    padding: 0.6em 4em 0.7em;
+    margin: 2em 0 0;
+    background: $green;
+    border: 2px solid  $green;
+
+    @include respond-to($phone) {
+      padding: 0.6em 2em 0.7em;
+    }
+
+    @include respond-to($tablet-landscape) {
+      padding: 0.6em 2em 0.7em;
+      display: block;
+      margin: 2em 0 0;
+    }
+
+    @include respond-to($ipad-pro) {
+      padding: 0.6em 2em 0.7em;
+      margin: 2em 0;
+      display: block;
+    } 
+
+    @include respond-to($large-desktop) {
+        display: block;
+  }
+}
+
+.reservar-txt{
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: $white;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.detalle-btn {
+  padding: 0.6em 4em 0.7em;
+  margin: 0 0 4em;
+  background: $green;
+  border: 2px solid  $green;
+
+  @include respond-to($phone) {
+    padding: 0.6em 2em 0.7em;
+  }
+
+  @include respond-to($tablet-landscape) {
+    padding: 0.6em 2em 0.7em;
+    margin: 0;
+  }
+
+  @include respond-to($tablet-portrait) {
+      margin: 0 0 3em;
+      padding: .5em 1.5em;
+    }
+
+  @include respond-to($ipad-pro) {
+    padding: 0.6em 2em 0.7em;
+    margin: 0 0 14.7em;
+  } 
+}
   
 
 

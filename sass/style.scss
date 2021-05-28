@@ -451,6 +451,67 @@ $white: #ffffff;
     }
   }
 
+  .relacionados-section {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .relacionados-container {
+    margin: 4em 8em 0;
+  
+    @include respond-to($phone) {
+      margin: 0;
+      background-position: center;
+    }
+
+    @include respond-to($tablet-landscape) {
+      margin: 4em 1em;
+    }
+
+    @include respond-to($tablet-portrait) {
+      margin: 2em 0 0 0;
+    }
+
+    @include respond-to($ipad-pro) {
+        margin: 0 2em;
+    } 
+  }
+
+  .img-relacionados{
+    height: 210px;
+    margin: 0;
+
+    @include respond-to($phone) {
+      height: 138px;
+      margin: 0;
+    }
+
+    @include respond-to($tablet-portrait) {
+      padding: 0;
+      margin: 0;
+      height: 128px;
+    }
+
+    @include respond-to($tablet-landscape) {
+      padding: 0;
+      margin: 0;
+      height: 128px;
+    }
+
+    @include respond-to($ipad-pro) {
+        height: 170px;
+    } 
+  }
+
+  .img-relacionados-name{
+    margin: 1em 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
   .reservar-submit {
     padding: 0.6em 4em 0.7em;
     margin: 2em 0 0;

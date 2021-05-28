@@ -6,21 +6,9 @@ $green: #3CBC48;
 $black: #292A2A;
 $white: #ffffff;
 
-/*
-
-font-family: 'Roboto', sans-serif;
-font-weight: 400; -> Regular
-
-font-family: 'Roboto', sans-serif;
-font-weight: 700; -> Bold
-
-font-family: 'Roboto', sans-serif;
-font-weight: 900; -> Black
-*/
-
   h1{
     padding: 0;
-    margin: 1.3em 0;
+    margin: 0;
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -28,23 +16,20 @@ font-weight: 900; -> Black
     @include respond-to($phone){
       width: 100%;
       margin: 1em 0; 
-    }  
-         
+    }        
   }
-  
-  h5 {
-    margin: 1em 0;
+
+  h2{
+    margin: 2em 0 1.5em;
+    color: $black;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     text-align: center;
-  }
-  
-  h6 {
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    color: $white;
-    text-align: center;
+
+    @include respond-to($phone) {
+        margin: 1.5em 0;
+        text-align: center;
+    }
   }
   
   footer {
@@ -56,6 +41,10 @@ font-weight: 900; -> Black
       padding: 0.5em 0;
       background: $green;
     }
+  }
+
+  .home-tittle{
+    margin: 1.5em 0em 1em;
   }
   
   .container-fluid {
@@ -88,26 +77,6 @@ font-weight: 900; -> Black
     width: 100%;
     padding: 1em;
     background: $green;
-  }
-  
-  .top-nav {
-    padding: 0;
-    margin: 0.5em;
-    float: right;
-  }
-  
-  .top-item {
-    display: inline;
-    padding: 0;
-    margin: 0 3em 0 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 1em;
-    color: $white;
-
-    @include respond-to($phone) {
-      margin: 0 13em 0 0;
-    }
   }
   
   .top-link {
@@ -175,7 +144,7 @@ font-weight: 900; -> Black
     } 
   }    
   
-  .submit-button {
+  .button {
     padding: 0.6em 2em;
     margin: 0;
     border: 2px solid $white;
@@ -186,10 +155,24 @@ font-weight: 900; -> Black
       margin: 0;
     }
   }
+
+  .button-text{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: $black;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .button-text:hover{
+    color: $black;
+  }
   
   .combo-container {
     width: 40%;
-    margin: 0 0 0 29em;
+    padding: 0;
+    margin: 0;
 
     @include respond-to($phone) {
       width: 100%;
@@ -197,19 +180,20 @@ font-weight: 900; -> Black
     }
 
     @include respond-to($tablet-portrait) {
-      padding: 0;
-      margin: 0 10.1em;
+      display: inline-block;
     }
 
     @include respond-to($tablet-landscape) {
-      padding: 0;
-      margin: 0 14.4em;
+      display: inline-block;
     }
 
     @include respond-to($ipad-pro) {
+      display: inline-block;
       width: 50%;
-      padding: 0;
-      margin: 0 15em;
+    }
+
+    @include respond-to($large-desktop) {
+      display: inline-block;
     }
   }
   
@@ -241,28 +225,67 @@ font-weight: 900; -> Black
   }
   
   .img-container {
-    margin: 4em 8em;
+    margin: 4em 11em 0;
   
     @include respond-to($phone) {
       margin: 0;
       background-position: center;
     }
 
+    @include respond-to($tablet-landscape) {
+      margin: 2em 2em 0;
+    }
+
     @include respond-to($tablet-portrait) {
-      margin: 2em 0 0 0;
+      margin: 2em 2em 0;
+    }
+
+    @include respond-to($ipad-pro) {
+      margin: 3em 5em 0
     }
   }
   
-  .reservar-button {
-    padding: 0.6em 2em 0.7em;
-    margin: 0 0 2em;
+  .detalle-button {
+    padding: 0.6em 4em 0.7em;
+    margin: 0 0 4em;
     background: $green;
     border: 2px solid  $green;
     text-align: center;
 
+    @include respond-to($phone) {
+      padding: 0.6em 2em 0.7em;
+    }
+
+    @include respond-to($tablet-portrait) {
+      padding: .5em 2em;
+    }
+
+    @include respond-to($tablet-landscape) {
+      padding: 0.6em 2em 0.7em;
+      margin: 0 0 3em;
+    }
+
     @include respond-to($ipad-pro) {
+      padding: 0.6em 2em 0.7em;
       margin: 0 0 3em;
     } 
+  }
+
+  .img-name{
+    margin: 1em 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  .detalle-text{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: $white;
+    text-align: center;
+    font-size: 1rem;
   }
   
   .footer-logo {
@@ -323,6 +346,8 @@ font-weight: 900; -> Black
   }
   
   .img{
+    height: 240px;
+    margin: 0;
     @include respond-to($phone) {
       height: 138px;
       margin: 0;
@@ -331,13 +356,13 @@ font-weight: 900; -> Black
     @include respond-to($tablet-portrait) {
       padding: 0;
       margin: 0;
-      height: 170px;
+      height: 150px;
     }
 
     @include respond-to($tablet-landscape) {
       padding: 0;
       margin: 0;
-      height: 113px;
+      height: 143px;
     }
 
     @include respond-to($ipad-pro) {

@@ -1,17 +1,6 @@
-/*
-
-font-family: 'Roboto', sans-serif;
-font-weight: 400; -> Regular
-
-font-family: 'Roboto', sans-serif;
-font-weight: 700; -> Bold
-
-font-family: 'Roboto', sans-serif;
-font-weight: 900; -> Black
-*/
 h1 {
   padding: 0;
-  margin: 1.3em 0;
+  margin: 0;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -23,19 +12,18 @@ h1 {
   }
 }
 
-h5 {
-  margin: 1em 0;
+h2 {
+  margin: 2em 0 1.5em;
+  color: #292A2A;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-align: center;
 }
-
-h6 {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  color: #ffffff;
-  text-align: center;
+@media only screen and (max-width: 480px) {
+  h2 {
+    margin: 1.5em 0;
+    text-align: center;
+  }
 }
 
 footer {
@@ -48,6 +36,10 @@ footer {
     padding: 0.5em 0;
     background: #3CBC48;
   }
+}
+
+.home-tittle {
+  margin: 1.5em 0em 1em;
 }
 
 .container-fluid {
@@ -80,27 +72,6 @@ footer {
   width: 100%;
   padding: 1em;
   background: #3CBC48;
-}
-
-.top-nav {
-  padding: 0;
-  margin: 0.5em;
-  float: right;
-}
-
-.top-item {
-  display: inline;
-  padding: 0;
-  margin: 0 3em 0 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 1em;
-  color: #ffffff;
-}
-@media only screen and (max-width: 480px) {
-  .top-item {
-    margin: 0 13em 0 0;
-  }
 }
 
 .top-link {
@@ -168,28 +139,42 @@ footer {
     width: 40%;
   }
 }
-@media only screen and (min-width: 979px) and (max-width: 1024px) {
+@media only screen and (min-width: 979px) and (max-width: 1025px) {
   .input {
     width: 40%;
   }
 }
 
-.submit-button {
+.button {
   padding: 0.6em 2em;
   margin: 0;
   border: 2px solid #ffffff;
   border-radius: 0.7em;
 }
 @media only screen and (max-width: 480px) {
-  .submit-button {
+  .button {
     padding: 0.2em 1em;
     margin: 0;
   }
 }
 
+.button-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #292A2A;
+  text-align: center;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.button-text:hover {
+  color: #292A2A;
+}
+
 .combo-container {
   width: 40%;
-  margin: 0 0 0 29em;
+  padding: 0;
+  margin: 0;
 }
 @media only screen and (max-width: 480px) {
   .combo-container {
@@ -199,21 +184,23 @@ footer {
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .combo-container {
-    padding: 0;
-    margin: 0 10.1em;
+    display: inline-block;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .combo-container {
-    padding: 0;
-    margin: 0 14.4em;
+    display: inline-block;
   }
 }
-@media only screen and (min-width: 979px) and (max-width: 1024px) {
+@media only screen and (min-width: 979px) and (max-width: 1025px) {
   .combo-container {
+    display: inline-block;
     width: 50%;
-    padding: 0;
-    margin: 0 15em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .combo-container {
+    display: inline-block;
   }
 }
 
@@ -247,7 +234,7 @@ footer {
 }
 
 .img-container {
-  margin: 4em 8em;
+  margin: 4em 11em 0;
 }
 @media only screen and (max-width: 480px) {
   .img-container {
@@ -255,23 +242,67 @@ footer {
     background-position: center;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .img-container {
+    margin: 2em 2em 0;
+  }
+}
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .img-container {
-    margin: 2em 0 0 0;
+    margin: 2em 2em 0;
+  }
+}
+@media only screen and (min-width: 979px) and (max-width: 1025px) {
+  .img-container {
+    margin: 3em 5em 0;
   }
 }
 
-.reservar-button {
-  padding: 0.6em 2em 0.7em;
-  margin: 0 0 2em;
+.detalle-button {
+  padding: 0.6em 4em 0.7em;
+  margin: 0 0 4em;
   background: #3CBC48;
   border: 2px solid #3CBC48;
   text-align: center;
 }
-@media only screen and (min-width: 979px) and (max-width: 1024px) {
-  .reservar-button {
+@media only screen and (max-width: 480px) {
+  .detalle-button {
+    padding: 0.6em 2em 0.7em;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .detalle-button {
+    padding: 0.5em 2em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .detalle-button {
+    padding: 0.6em 2em 0.7em;
     margin: 0 0 3em;
   }
+}
+@media only screen and (min-width: 979px) and (max-width: 1025px) {
+  .detalle-button {
+    padding: 0.6em 2em 0.7em;
+    margin: 0 0 3em;
+  }
+}
+
+.img-name {
+  margin: 1em 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.detalle-text {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .footer-logo {
@@ -332,6 +363,10 @@ footer {
   color: #ffffff;
 }
 
+.img {
+  height: 240px;
+  margin: 0;
+}
 @media only screen and (max-width: 480px) {
   .img {
     height: 138px;
@@ -342,17 +377,17 @@ footer {
   .img {
     padding: 0;
     margin: 0;
-    height: 170px;
+    height: 150px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .img {
     padding: 0;
     margin: 0;
-    height: 113px;
+    height: 143px;
   }
 }
-@media only screen and (min-width: 979px) and (max-width: 1024px) {
+@media only screen and (min-width: 979px) and (max-width: 1025px) {
   .img {
     padding: 0;
     margin: 0;

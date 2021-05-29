@@ -652,9 +652,7 @@ footer {
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .registrar-background {
-    margin: 0;
-    background-position: center;
-    background-size: cover;
+    padding: 9em 0 21.5em;
   }
 }
 
@@ -695,6 +693,11 @@ footer {
   background: #3CBC48;
   color: #ffffff;
 }
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .cantidad {
+    width: 80%;
+  }
+}
 
 .sumar-restar {
   padding: 0;
@@ -727,6 +730,11 @@ footer {
     width: 225%;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .regresar-btn {
+    width: 200%;
+  }
+}
 
 .confirmar-btn {
   display: block;
@@ -739,5 +747,11 @@ footer {
   .confirmar-btn {
     float: right;
     margin: 2em 0 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .confirmar-btn {
+    display: inline-block;
+    width: 55%;
   }
 }

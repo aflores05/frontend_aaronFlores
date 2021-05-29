@@ -602,9 +602,7 @@ $gray: #C6C6C6;
   }
 
   @include respond-to($tablet-landscape) {
-    margin: 0;
-    background-position: center;
-    background-size: cover;
+    padding: 9em 0 21.5em;
   }
 }
 
@@ -642,6 +640,10 @@ $gray: #C6C6C6;
   text-align: center;
   background: $green;
   color: $white;
+
+  @include respond-to($tablet-landscape) {
+    width: 80%
+  }
 }
 
 .sumar-restar{
@@ -673,6 +675,10 @@ $gray: #C6C6C6;
     margin: 2em 0 0;
     width: 225%;
   }
+
+  @include respond-to($tablet-landscape) {
+    width: 200%;
+  }
 }
 
 .confirmar-btn{
@@ -685,6 +691,11 @@ $gray: #C6C6C6;
   @include respond-to($phone) {
     float: right;
     margin: 2em 0 0;
+  }
+
+  @include respond-to($tablet-landscape) {
+    display: inline-block;
+    width: 55%;
   }
 }
   

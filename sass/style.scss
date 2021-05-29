@@ -647,6 +647,7 @@ $gray: #C6C6C6;
   }
 
   @include respond-to($tablet-portrait) {
+    text-align: center;
     display: inline-block;
   }
 }
@@ -697,6 +698,12 @@ $gray: #C6C6C6;
   
 }
 
+.btn-container{
+  @include respond-to($tablet-portrait) {
+    margin: 0 0 0 10.5em;
+  }
+}
+
 .regresar-btn{
   display: block;
   width: 100%;
@@ -711,7 +718,7 @@ $gray: #C6C6C6;
 
   @include respond-to($tablet-portrait) {
     float: right;
-    width: 80%;
+    width: 250%;
   }
 
   @include respond-to($tablet-landscape) {
@@ -765,12 +772,12 @@ $gray: #C6C6C6;
   text-align: left;
 
   @include respond-to($phone) {
-      margin: 1em 0 .5em;
+      margin: 1em 0 0;
       text-align: center;
   }
 
   @include respond-to($tablet-portrait) {
-    padding: 0.6em 2em 0.7em;
+    padding: 0.6em 2em 0;
     margin: 1em 0 0;
     text-align: center;
   } 
@@ -782,17 +789,24 @@ $gray: #C6C6C6;
   color: $black;
 
   @include respond-to($phone) {
+    margin: 1em 0;
     text-align: center;
   }
 
   @include respond-to($tablet-portrait) {
+    margin: .5em 0;
     text-align: center;
   }
 }
 
 .subtittle-container{
   margin: 1em 0;
+
+  @include respond-to($tablet-portrait) {
+    margin: 1em 8em;
+  }
 }
+
 
 .confirmar-input {
   float: left;;
@@ -806,13 +820,16 @@ $gray: #C6C6C6;
   font-weight: 400;
 
   @include respond-to($phone) {
+    float: unset;
     width: 60%;
     margin: 0;
     padding: 0.2em;
   }
 
   @include respond-to($tablet-portrait) {
-    width: 60%
+    float: none;
+    margin: 1em 0;
+    width: 81%
   }
 
   @include respond-to($tablet-landscape) {
@@ -822,7 +839,11 @@ $gray: #C6C6C6;
   @include respond-to($ipad-pro) {
     width: 40%
   } 
-}    
+}   
+
+
+
+
   
 
 

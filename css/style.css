@@ -703,6 +703,7 @@ footer {
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .tipo-entrada {
+    text-align: center;
     display: inline-block;
   }
 }
@@ -756,6 +757,12 @@ footer {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .btn-container {
+    margin: 0 0 0 10.5em;
+  }
+}
+
 .regresar-btn {
   display: block;
   width: 100%;
@@ -772,7 +779,7 @@ footer {
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .regresar-btn {
     float: right;
-    width: 80%;
+    width: 250%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -833,13 +840,13 @@ footer {
 }
 @media only screen and (max-width: 480px) {
   .confirmar-tittle {
-    margin: 1em 0 0.5em;
+    margin: 1em 0 0;
     text-align: center;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .confirmar-tittle {
-    padding: 0.6em 2em 0.7em;
+    padding: 0.6em 2em 0;
     margin: 1em 0 0;
     text-align: center;
   }
@@ -852,17 +859,24 @@ footer {
 }
 @media only screen and (max-width: 480px) {
   .confirmar-subtittle {
+    margin: 1em 0;
     text-align: center;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .confirmar-subtittle {
+    margin: 0.5em 0;
     text-align: center;
   }
 }
 
 .subtittle-container {
   margin: 1em 0;
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .subtittle-container {
+    margin: 1em 8em;
+  }
 }
 
 .confirmar-input {
@@ -878,6 +892,7 @@ footer {
 }
 @media only screen and (max-width: 480px) {
   .confirmar-input {
+    float: unset;
     width: 60%;
     margin: 0;
     padding: 0.2em;
@@ -885,7 +900,9 @@ footer {
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .confirmar-input {
-    width: 60%;
+    float: none;
+    margin: 1em 0;
+    width: 81%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {

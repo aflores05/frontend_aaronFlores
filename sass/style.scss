@@ -588,6 +588,26 @@ $gray: #C6C6C6;
   } 
 }
 
+.registrar-background {
+  padding: 9em 0 13em;
+  margin: 0;
+  background: $black;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  @include respond-to($phone) {
+    padding: 7em 0 3em;
+    text-align: center;
+  }
+
+  @include respond-to($tablet-landscape) {
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
 .registrar-subtittle{
   margin: 0;
   text-align: left;
@@ -636,6 +656,7 @@ $gray: #C6C6C6;
 
 .regresar-btn{
   display: block;
+  width: 100%;
   padding: .5em 0;
   margin: 0;
   background: $gray;
@@ -643,6 +664,7 @@ $gray: #C6C6C6;
 
 .confirmar-btn{
   display: block;
+  width: 60%;
   padding: .5em 0;
   margin: 0;
   background: $green;

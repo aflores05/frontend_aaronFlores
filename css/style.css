@@ -26,6 +26,20 @@ h2 {
   }
 }
 
+h3 {
+  margin: 1em 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  color: #ffffff;
+}
+@media only screen and (max-width: 480px) {
+  h3 {
+    margin: 1.5em 0;
+    text-align: center;
+  }
+}
+
 footer {
   width: 100%;
   padding: 1em;
@@ -620,4 +634,64 @@ footer {
     padding: 0.6em 2em 0.7em;
     margin: 0 0 14.7em;
   }
+}
+
+.registrar-subtittle {
+  margin: 0;
+  text-align: left;
+  color: #ffffff;
+}
+
+.tipo-entrada {
+  width: 80%;
+  padding: 0.7em;
+  margin: 1em 0 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  background: #3CBC48;
+  color: #ffffff;
+}
+
+.cantidad {
+  width: 36%;
+  padding: 0.5em 0;
+  margin: 1em 0 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  background: #3CBC48;
+  color: #ffffff;
+}
+
+.sumar-restar {
+  padding: 0;
+  margin: 0 1.1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  color: #292A2A;
+}
+
+.btn-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.regresar-btn {
+  display: block;
+  padding: 0.5em 0;
+  margin: 0;
+  background: #C6C6C6;
+}
+
+.confirmar-btn {
+  display: block;
+  padding: 0.5em 0;
+  margin: 0;
+  background: #3CBC48;
 }

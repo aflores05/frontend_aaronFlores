@@ -5,6 +5,7 @@
 $green: #3CBC48;
 $black: #292A2A;
 $white: #ffffff;
+$gray: #C6C6C6;
 
   h1{
     padding: 0;
@@ -25,6 +26,19 @@ $white: #ffffff;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     text-align: center;
+
+    @include respond-to($phone) {
+        margin: 1.5em 0;
+        text-align: center;
+    }
+  }
+
+  h3{
+    margin: 1em 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-align: left;
+    color: $white;
 
     @include respond-to($phone) {
         margin: 1.5em 0;
@@ -572,6 +586,66 @@ $white: #ffffff;
     padding: 0.6em 2em 0.7em;
     margin: 0 0 14.7em;
   } 
+}
+
+.registrar-subtittle{
+  margin: 0;
+  text-align: left;
+  color: $white;
+}
+
+.tipo-entrada{
+  width: 80%;
+  padding: .7em;
+  margin: 1em 0 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  background: $green;
+  color: $white;
+}
+
+.cantidad{
+  width: 36%;
+  padding: .5em 0;
+  margin: 1em 0 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  background: $green;
+  color: $white;
+}
+
+.sumar-restar{
+  padding: 0;
+  margin: 0 1.1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  color: $black;
+}
+
+.btn-text{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: $white;
+  text-align: center;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.regresar-btn{
+  display: block;
+  padding: .5em 0;
+  margin: 0;
+  background: $gray;
+}
+
+.confirmar-btn{
+  display: block;
+  padding: .5em 0;
+  margin: 0;
+  background: $green;
 }
   
 

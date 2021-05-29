@@ -758,7 +758,7 @@ $gray: #C6C6C6;
   }
 
   @include respond-to($tablet-landscape) {
-    padding: 9em 0 26em;
+    padding: 9em 0 30.2em;
   }
 
   @include respond-to($ipad-pro) {
@@ -833,7 +833,8 @@ $gray: #C6C6C6;
   }
 
   @include respond-to($tablet-landscape) {
-    width: 40%
+    float: none;
+    width: 60%
   }
 
   @include respond-to($ipad-pro) {

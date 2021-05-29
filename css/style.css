@@ -824,7 +824,7 @@ footer {
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .confirmar-background {
-    padding: 9em 0 26em;
+    padding: 9em 0 30.2em;
   }
 }
 @media only screen and (min-width: 979px) and (max-width: 1025px) {
@@ -907,7 +907,8 @@ footer {
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .confirmar-input {
-    width: 40%;
+    float: none;
+    width: 60%;
   }
 }
 @media only screen and (min-width: 979px) and (max-width: 1025px) {

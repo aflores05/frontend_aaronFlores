@@ -39,6 +39,11 @@ h3 {
     text-align: center;
   }
 }
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  h3 {
+    text-align: center;
+  }
+}
 
 footer {
   width: 100%;
@@ -637,7 +642,7 @@ footer {
 }
 
 .registrar-background {
-  padding: 9em 0 13em;
+  padding: 9em 0 27.6em;
   margin: 0;
   background: #292A2A;
   background-position: center;
@@ -655,6 +660,11 @@ footer {
     padding: 9em 0 21.5em;
   }
 }
+@media only screen and (min-width: 979px) and (max-width: 1025px) {
+  .registrar-background {
+    padding: 9em 0 48.5em;
+  }
+}
 
 .registrar-subtittle {
   margin: 0;
@@ -664,6 +674,11 @@ footer {
 @media only screen and (max-width: 480px) {
   .registrar-subtittle {
     display: none;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .registrar-subtittle {
+    text-align: center;
   }
 }
 
@@ -682,6 +697,11 @@ footer {
     width: 100%;
   }
 }
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .tipo-entrada {
+    display: inline-block;
+  }
+}
 
 .cantidad {
   width: 50%;
@@ -693,9 +713,24 @@ footer {
   background: #3CBC48;
   color: #ffffff;
 }
+@media only screen and (max-width: 480px) {
+  .cantidad {
+    width: 54%;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .cantidad {
     width: 80%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .cantidad {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 979px) and (max-width: 1025px) {
+  .cantidad {
+    width: 57%;
   }
 }
 
@@ -728,6 +763,12 @@ footer {
   .regresar-btn {
     margin: 2em 0 0;
     width: 225%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .regresar-btn {
+    float: right;
+    width: 80%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {

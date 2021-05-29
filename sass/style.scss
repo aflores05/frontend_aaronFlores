@@ -44,6 +44,10 @@ $gray: #C6C6C6;
         margin: 2em 0 0;
         text-align: center;
     }
+
+    @include respond-to($tablet-portrait) {
+      text-align: center;
+    }
   }
   
   footer {
@@ -589,7 +593,7 @@ $gray: #C6C6C6;
 }
 
 .registrar-background {
-  padding: 9em 0 13em;
+  padding: 9em 0 27.6em;
   margin: 0;
   background: $black;
   background-position: center;
@@ -604,6 +608,10 @@ $gray: #C6C6C6;
   @include respond-to($tablet-landscape) {
     padding: 9em 0 21.5em;
   }
+
+  @include respond-to($ipad-pro) {
+    padding: 9em 0 48.5em;
+  }
 }
 
 .registrar-subtittle{
@@ -613,6 +621,10 @@ $gray: #C6C6C6;
 
   @include respond-to($phone) {
     display: none;
+  }
+
+  @include respond-to($tablet-portrait) {
+    text-align: center;
   }
 }
 
@@ -629,6 +641,10 @@ $gray: #C6C6C6;
   @include respond-to($phone) {
     width: 100%;
   }
+
+  @include respond-to($tablet-portrait) {
+    display: inline-block;
+  }
 }
 
 .cantidad{
@@ -641,8 +657,20 @@ $gray: #C6C6C6;
   background: $green;
   color: $white;
 
+  @include respond-to($phone) {
+    width: 54%;
+  }
+
   @include respond-to($tablet-landscape) {
-    width: 80%
+    width: 80%;
+  }
+
+  @include respond-to($tablet-portrait) {
+    display: inline-block;
+  }
+
+  @include respond-to($ipad-pro) {
+    width: 57%
   }
 }
 
@@ -662,6 +690,7 @@ $gray: #C6C6C6;
   text-align: center;
   font-size: 1rem;
   text-decoration: none;
+  
 }
 
 .regresar-btn{
@@ -674,6 +703,11 @@ $gray: #C6C6C6;
   @include respond-to($phone) {
     margin: 2em 0 0;
     width: 225%;
+  }
+
+  @include respond-to($tablet-portrait) {
+    float: right;
+    width: 80%;
   }
 
   @include respond-to($tablet-landscape) {

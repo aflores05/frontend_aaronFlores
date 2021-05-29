@@ -800,3 +800,101 @@ footer {
     width: 55%;
   }
 }
+
+.confirmar-background {
+  padding: 9em 0 27.6em;
+  margin: 0;
+  background: #ffffff;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  .confirmar-background {
+    padding: 7em 0 3em;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .confirmar-background {
+    padding: 9em 0 26em;
+  }
+}
+@media only screen and (min-width: 979px) and (max-width: 1025px) {
+  .confirmar-background {
+    padding: 9em 0 48.5em;
+  }
+}
+
+.confirmar-tittle {
+  margin: 0 0 0.5em;
+  color: #292A2A;
+  text-align: left;
+}
+@media only screen and (max-width: 480px) {
+  .confirmar-tittle {
+    margin: 1em 0 0.5em;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .confirmar-tittle {
+    padding: 0.6em 2em 0.7em;
+    margin: 1em 0 0;
+    text-align: center;
+  }
+}
+
+.confirmar-subtittle {
+  margin: 0 0 1.2em;
+  text-align: left;
+  color: #292A2A;
+}
+@media only screen and (max-width: 480px) {
+  .confirmar-subtittle {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .confirmar-subtittle {
+    text-align: center;
+  }
+}
+
+.subtittle-container {
+  margin: 1em 0;
+}
+
+.confirmar-input {
+  float: left;
+  width: 68%;
+  padding: 0.4em 0;
+  margin: 0;
+  background: #ffffff;
+  color: #292A2A;
+  border: 2px solid #C6C6C6;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+@media only screen and (max-width: 480px) {
+  .confirmar-input {
+    width: 60%;
+    margin: 0;
+    padding: 0.2em;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .confirmar-input {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .confirmar-input {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 979px) and (max-width: 1025px) {
+  .confirmar-input {
+    width: 40%;
+  }
+}

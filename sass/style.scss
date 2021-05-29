@@ -736,6 +736,93 @@ $gray: #C6C6C6;
     width: 55%;
   }
 }
+
+.confirmar-background{
+  padding: 9em 0 27.6em;
+  margin: 0;
+  background: $white;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  @include respond-to($phone) {
+    padding: 7em 0 3em;
+    text-align: center;
+  }
+
+  @include respond-to($tablet-landscape) {
+    padding: 9em 0 26em;
+  }
+
+  @include respond-to($ipad-pro) {
+    padding: 9em 0 48.5em;
+  }
+}
+
+.confirmar-tittle{
+  margin: 0 0 .5em;
+  color: $black;
+  text-align: left;
+
+  @include respond-to($phone) {
+      margin: 1em 0 .5em;
+      text-align: center;
+  }
+
+  @include respond-to($tablet-portrait) {
+    padding: 0.6em 2em 0.7em;
+    margin: 1em 0 0;
+    text-align: center;
+  } 
+}
+
+.confirmar-subtittle{
+  margin: 0 0 1.2em;
+  text-align: left;
+  color: $black;
+
+  @include respond-to($phone) {
+    text-align: center;
+  }
+
+  @include respond-to($tablet-portrait) {
+    text-align: center;
+  }
+}
+
+.subtittle-container{
+  margin: 1em 0;
+}
+
+.confirmar-input {
+  float: left;;
+  width: 68%;
+  padding: 0.4em 0;
+  margin: 0;
+  background: $white;
+  color: #292A2A;
+  border: 2px solid $gray;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+
+  @include respond-to($phone) {
+    width: 60%;
+    margin: 0;
+    padding: 0.2em;
+  }
+
+  @include respond-to($tablet-portrait) {
+    width: 60%
+  }
+
+  @include respond-to($tablet-landscape) {
+    width: 40%
+  }
+
+  @include respond-to($ipad-pro) {
+    width: 40%
+  } 
+}    
   
 
 

@@ -35,7 +35,7 @@ h3 {
 }
 @media only screen and (max-width: 480px) {
   h3 {
-    margin: 1.5em 0;
+    margin: 2em 0 0;
     text-align: center;
   }
 }
@@ -663,6 +663,11 @@ footer {
   text-align: left;
   color: #ffffff;
 }
+@media only screen and (max-width: 480px) {
+  .registrar-subtittle {
+    display: none;
+  }
+}
 
 .tipo-entrada {
   width: 80%;
@@ -671,12 +676,17 @@ footer {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-align: left;
-  background: #3CBC48;
-  color: #ffffff;
+  background: #C6C6C6;
+  color: #292A2A;
+}
+@media only screen and (max-width: 480px) {
+  .tipo-entrada {
+    width: 100%;
+  }
 }
 
 .cantidad {
-  width: 36%;
+  width: 50%;
   padding: 0.5em 0;
   margin: 1em 0 0;
   font-family: "Roboto", sans-serif;
@@ -711,6 +721,12 @@ footer {
   margin: 0;
   background: #C6C6C6;
 }
+@media only screen and (max-width: 480px) {
+  .regresar-btn {
+    margin: 2em 0 0;
+    width: 225%;
+  }
+}
 
 .confirmar-btn {
   display: block;
@@ -718,4 +734,10 @@ footer {
   padding: 0.5em 0;
   margin: 0;
   background: #3CBC48;
+}
+@media only screen and (max-width: 480px) {
+  .confirmar-btn {
+    float: right;
+    margin: 2em 0 0;
+  }
 }

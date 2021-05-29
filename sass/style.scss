@@ -41,7 +41,7 @@ $gray: #C6C6C6;
     color: $white;
 
     @include respond-to($phone) {
-        margin: 1.5em 0;
+        margin: 2em 0 0;
         text-align: center;
     }
   }
@@ -612,6 +612,10 @@ $gray: #C6C6C6;
   margin: 0;
   text-align: left;
   color: $white;
+
+  @include respond-to($phone) {
+    display: none;
+  }
 }
 
 .tipo-entrada{
@@ -621,12 +625,16 @@ $gray: #C6C6C6;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-align: left;
-  background: $green;
-  color: $white;
+  background: $gray;
+  color: $black;
+
+  @include respond-to($phone) {
+    width: 100%;
+  }
 }
 
 .cantidad{
-  width: 36%;
+  width: 50%;
   padding: .5em 0;
   margin: 1em 0 0;
   font-family: "Roboto", sans-serif;
@@ -660,6 +668,11 @@ $gray: #C6C6C6;
   padding: .5em 0;
   margin: 0;
   background: $gray;
+
+  @include respond-to($phone) {
+    margin: 2em 0 0;
+    width: 225%;
+  }
 }
 
 .confirmar-btn{
@@ -668,6 +681,11 @@ $gray: #C6C6C6;
   padding: .5em 0;
   margin: 0;
   background: $green;
+
+  @include respond-to($phone) {
+    float: right;
+    margin: 2em 0 0;
+  }
 }
   
 

@@ -319,9 +319,9 @@ footer {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  color: #ffffff;
   text-align: center;
   font-size: 1rem;
+  color: #ffffff;
 }
 
 .footer-logo {
@@ -611,6 +611,10 @@ footer {
   font-size: 1rem;
 }
 
+.reservar-link {
+  text-decoration: none;
+}
+
 .detalle-btn {
   padding: 0.6em 4em 0.7em;
   margin: 0 0 4em;
@@ -657,7 +661,7 @@ footer {
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .registrar-background {
-    padding: 9em 0 21.5em;
+    padding: 9em 0 26em;
   }
 }
 @media only screen and (min-width: 979px) and (max-width: 1025px) {
@@ -779,7 +783,7 @@ footer {
 
 .confirmar-btn {
   display: block;
-  width: 60%;
+  width: 68%;
   padding: 0.5em 0;
   margin: 0;
   background: #3CBC48;

@@ -762,7 +762,7 @@ $gray: #C6C6C6;
   }
 
   @include respond-to($ipad-pro) {
-    padding: 9em 0 48.5em;
+    padding: 9em 0 49em;
   }
 }
 
@@ -838,7 +838,8 @@ $gray: #C6C6C6;
   }
 
   @include respond-to($ipad-pro) {
-    width: 40%
+    float: none;
+    width: 85%
   } 
 }   
 

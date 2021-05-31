@@ -856,6 +856,14 @@ $gray: #C6C6C6;
   padding: 0 0 11.3em;
   background: $gray;
 
+  @include respond-to($phone) {
+    padding: 0 0 3em;
+  } 
+
+  @include respond-to($tablet-portrait) {
+    padding: 0 0 3em;
+  } 
+
   @include respond-to($tablet-landscape) {
     padding: 0 0 13.5em;
   } 

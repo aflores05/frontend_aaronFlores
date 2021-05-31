@@ -49,6 +49,10 @@ $gray: #C6C6C6;
       text-align: center;
     }
   }
+
+  p{
+    margin-bottom: 0;
+  }
   
   footer {
     width: 100%;
@@ -696,6 +700,10 @@ $gray: #C6C6C6;
   font-size: 1rem;
   text-decoration: none;
   
+}
+
+.btn-text:hover{
+  color: $white;
 }
 
 .btn-container{

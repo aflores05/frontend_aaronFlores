@@ -938,14 +938,13 @@ footer {
 }
 @media only screen and (max-width: 480px) {
   .resumen-tittle {
-    margin: 1em 0 0;
+    margin: 4em 0 0;
     text-align: center;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .resumen-tittle {
-    padding: 0.6em 2em 0;
-    margin: 1em 0 0;
+    margin: 4em 0 0.5em;
     text-align: center;
   }
 }
@@ -976,4 +975,15 @@ footer {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
+}
+@media only screen and (max-width: 480px) {
+  .resumen-paragraph {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .resumen-paragraph {
+    margin: 0.5em 0 0;
+    text-align: center;
+  }
 }

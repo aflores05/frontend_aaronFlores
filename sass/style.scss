@@ -863,13 +863,12 @@ $gray: #C6C6C6;
   text-align: center;
 
   @include respond-to($phone) {
-      margin: 1em 0 0;
+      margin: 4em 0 0;
       text-align: center;
   }
 
   @include respond-to($tablet-portrait) {
-    padding: 0.6em 2em 0;
-    margin: 1em 0 0;
+    margin: 4em 0 .5em;
     text-align: center;
   } 
 }
@@ -898,6 +897,15 @@ $gray: #C6C6C6;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
+
+  @include respond-to($phone) {
+    text-align: center;
+  }
+
+  @include respond-to($tablet-portrait) {
+    margin: .5em 0 0;
+    text-align: center;
+  }
 }
 
 

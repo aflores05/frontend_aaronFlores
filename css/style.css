@@ -927,12 +927,17 @@ footer {
 }
 
 .resumen-background {
-  padding: 0 0 3em;
+  padding: 0 0 11.3em;
   background: #C6C6C6;
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .resumen-background {
     padding: 0 0 13.5em;
+  }
+}
+@media only screen and (min-width: 979px) and (max-width: 1025px) {
+  .resumen-background {
+    padding: 0 0 33.6em;
   }
 }
 

@@ -853,11 +853,15 @@ $gray: #C6C6C6;
 }   
 
 .resumen-background{
-  padding: 0 0 3em;
+  padding: 0 0 11.3em;
   background: $gray;
 
   @include respond-to($tablet-landscape) {
     padding: 0 0 13.5em;
+  } 
+
+  @include respond-to($ipad-pro) {
+    padding: 0 0 33.6em;
   } 
 }
 

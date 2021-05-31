@@ -647,6 +647,7 @@ $gray: #C6C6C6;
   color: $black;
 
   @include respond-to($phone) {
+    text-align: center;
     width: 100%;
   }
 
@@ -667,6 +668,7 @@ $gray: #C6C6C6;
   color: $white;
 
   @include respond-to($phone) {
+    display: inline-block;
     width: 54%;
   }
 

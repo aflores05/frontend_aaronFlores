@@ -702,6 +702,7 @@ footer {
 }
 @media only screen and (max-width: 480px) {
   .tipo-entrada {
+    text-align: center;
     width: 100%;
   }
 }
@@ -724,6 +725,7 @@ footer {
 }
 @media only screen and (max-width: 480px) {
   .cantidad {
+    display: inline-block;
     width: 54%;
   }
 }

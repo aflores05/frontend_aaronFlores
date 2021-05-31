@@ -853,8 +853,12 @@ $gray: #C6C6C6;
 }   
 
 .resumen-background{
-  padding: 0 0 3em 0;
+  padding: 0 0 3em;
   background: $gray;
+
+  @include respond-to($tablet-landscape) {
+    padding: 0 0 13.5em;
+  } 
 }
 
 .resumen-tittle{

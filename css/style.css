@@ -892,11 +892,11 @@ footer {
   width: 68%;
   padding: 0.4em 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   background: #ffffff;
   color: #292A2A;
   border: 2px solid #C6C6C6;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
 }
 @media only screen and (max-width: 480px) {
   .confirmar-input {
@@ -924,4 +924,56 @@ footer {
     float: none;
     width: 85%;
   }
+}
+
+.resumen-background {
+  padding: 0 0 3em 0;
+  background: #C6C6C6;
+}
+
+.resumen-tittle {
+  margin: 3.5em 0 0.5em;
+  color: #292A2A;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  .resumen-tittle {
+    margin: 1em 0 0;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .resumen-tittle {
+    padding: 0.6em 2em 0;
+    margin: 1em 0 0;
+    text-align: center;
+  }
+}
+
+.resumen-subtittle {
+  margin: 0 0 1.2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-align: right;
+  font-size: 1.25rem;
+  color: #292A2A;
+}
+@media only screen and (max-width: 480px) {
+  .resumen-subtittle {
+    margin: 1em 0;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .resumen-subtittle {
+    margin: 0.5em 0;
+    text-align: center;
+  }
+}
+
+.resumen-paragraph {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
 }

@@ -821,11 +821,12 @@ $gray: #C6C6C6;
   width: 68%;
   padding: 0.4em 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   background: $white;
   color: #292A2A;
   border: 2px solid $gray;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  
 
   @include respond-to($phone) {
     float: unset;
@@ -850,6 +851,54 @@ $gray: #C6C6C6;
     width: 85%
   } 
 }   
+
+.resumen-background{
+  padding: 0 0 3em 0;
+  background: $gray;
+}
+
+.resumen-tittle{
+  margin: 3.5em 0 .5em;
+  color: $black;
+  text-align: center;
+
+  @include respond-to($phone) {
+      margin: 1em 0 0;
+      text-align: center;
+  }
+
+  @include respond-to($tablet-portrait) {
+    padding: 0.6em 2em 0;
+    margin: 1em 0 0;
+    text-align: center;
+  } 
+}
+
+.resumen-subtittle{
+  margin: 0 0 1.2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-align: right;
+  font-size: 1.25rem;
+  color: $black;
+
+  @include respond-to($phone) {
+    margin: 1em 0;
+    text-align: center;
+  }
+
+  @include respond-to($tablet-portrait) {
+    margin: .5em 0;
+    text-align: center;
+  }
+}
+
+.resumen-paragraph{
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
 
 
 
